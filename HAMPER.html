@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies site</title>
+</head>
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    
+    
+    /* Sunset gradient background */
+    background: linear-gradient(to right, #1e3c72, #2a5298, #ff9966);
+    position: relative;
+}
+
+/* Light blur circles (cinema effect) */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10%);
+    background-size: 150px 150px;
+    animation: move 20s linear infinite;
+}
+
+/* Film strip effect */
+.film-strip {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 120px;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        black 0px,
+        black 40px,
+        white 40px,
+        white 60px
+    );
+    opacity: 0.6;
+    transform: rotate(10deg);
+}
+
+/* Animation */
+@keyframes move {
+    from { background-position: 0 0; }
+    to { background-position: 300px 300px; }
+}
+
+/* Center text */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+</style>
+
+<body>
+    <input type="text" placeholder="Search movie..." class="search">
+    <nav class="navbar">
+        
+    
+    <h2 align="center" id="top">MOVIES STORE</h2>
+    <ul>
+        <li>Home</li>
+        <li>Series</li>
+        <li>Action</li>
+        <li>Contacr</li>
+        
+    </ul>
+    </nav>
+      
+    <table border="100" cellspacing="50"  cellpading="50"  >
+        <p align="center" id="top"> Tap on your favorite movie to download order or pay</p>
+        <tr>
+            <td>
+                
+                <img src="image/IMG_2288.JPG" alt="image" width="250" height="250">
+                <h3>F&F 10</h3>
+                <p> <a href="PAY.html">BUY</a></p>
+
+            </td><td>
+                
+                <img src="image/IMG_2289.JPG" alt="image" width="250" height="250">
+                <h3>EXTRACTION 2</h3>
+                <p> <a href="PAY.html">ORDER</a></p>
+
+            </td><td>
+                
+                <img src="image/IMG_2290.JPG" alt="image" width="250" height="250">
+                <h3>SEE SERIES</h3>
+                <p> <a href="PAY.html">ORDER</a></p>
+
+            </td><td>
+                <img src="image/IMG_2466.JPG" alt="image" width="250" height="250">
+                <h3>FROM SERIES</h3>
+                <p> <a href="PAY.html">BUY</a></p>
+
+            </td>
+            </td>
+        </tr>
+        <tr>
+           <td>
+                <img src="image/IMG_2526.JPG" alt="image" width="250" height="250">
+                <h3>SNOWFALL</h3>
+                <p> <a href="PAY.html">REQUEST</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_2528.JPG" alt="image" width="250" height="250">
+                <h3>ALL AMERICANS</h3>
+                <p> <a href="PAY.html">TRAILER</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_2529.JPG" alt="image" width="250" height="250">
+                <h3>LAST OF US</h3>
+                <p> <a href="PAY.html">$50.99</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_2591.JPG" alt="image" width="250" height="250">
+                <h3>WORKING MAN</h3>
+                <p> <a href="PAY.html">ORDER</a></p>
+
+            </td> 
+        </tr>
+        <tr>
+           <td>
+                <img src="image/IMG_2611.JPG" alt="image" width="250" height="250">
+                <h3>MINIONS</h3>
+                <p> <a href="PAY.html">BUY</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_2612.JPG" alt="image" width="250" height="250">
+                <h3>THE MOTHER</h3>
+                <p> <a href="PAY.html">$29.99</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_2690.JPG" alt="image" width="250" height="250">
+                <h3>LOUI</h3>
+                <p> <a href="PAY.html">BUY</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_2770.JPG" alt="image" width="250" height="250">
+                <h3>GANGS OF LONDON</h3>
+                <p> <a href="PAY.html">ORDER</a></p>
+
+            </td> 
+        </tr>
+        <tr>
+           <td>
+                <img src="image/IMG_6743.JPG" alt="image" width="250" height="250">
+                <h3>GODFATHER OF HARLEM</h3>
+                <p> <a href="PAY.html">TRAILER</a></p>
+
+            </td>
+            <td>
+                <img src="image/IMG_6805.JPG" alt="image" width="250" height="250">
+                <h3>A NUN</h3>
+                <p> <a href="PAY.html">ORDER</a></p>
+
+            </td>
+            <td>
+                <img src="image/twitin.jpeg" alt="image" width="250" height="250">
+                <h3>NOWHERE</h3>
+                <p> <a href="PAY.html">$29.50</a></p>
+
+            </td>
+            <td>
+                <img src="image/war.jpeg" alt="image" width="250" height="250">
+                <h3>LAST BREATHE</h3>
+                <p> <a href="PAY.html">$40.09</a></p>
+
+            </td> 
+        </tr>
+    </table>
+<a href="#top" align="center"><button type="button">TOP</button></a>
+<footer>
+    <p>© 2026 Movies Store | Developed by Emmanuel</p>
+</footer>
+</body>
+</html> 
